@@ -10,7 +10,7 @@ function Nav() {
                 <button className="nav-item about">About</button>
                 <button className="nav-item tracker">Tracker</button>
                 <button className="nav-item help">Help</button>
-                <button className="cta track">Track Out!</button>
+                <button className="cta track">Login / Sign Up</button>
             </ul>
         </nav>
     );

@@ -51,10 +51,12 @@
     color: #FF9E00;
 }
 
-.nav-item:hover {
-    background-color: white;
+.cta:hover {
+    background-color: #FF9E00;
+    color: #fff;
+    cursor: pointer;
 }
 
 .nav-item:hover {
-    background-color: red;
+    color: gray;
 }
