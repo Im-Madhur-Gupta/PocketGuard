@@ -1,0 +1,44 @@
+.footer {
+    background: #04000A;
+    backdrop-filter: blur(6px);
+
+}
+
+.container {
+    width: 100vw;
+    height: 483px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+}
+
+.p-links, .s-links {
+    list-style: none;    
+}
+
+.products h3 {
+    margin: 0 0 0 38px;
+}
+
+.socials h3 {
+    margin: 0 0 0 38px;
+}
+
+li {
+    margin: 24px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: gray;
+}

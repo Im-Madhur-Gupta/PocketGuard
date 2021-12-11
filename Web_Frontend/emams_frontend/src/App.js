@@ -1,6 +1,9 @@
 import React from "react";
 import Background from "./components/Background/Background";
 import Nav from './components/Nav/Nav';
+import Login from './components/Login/Login';
+import Signup from "./components/Signup/Signup";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -8,6 +11,9 @@ function App() {
     <div className="Main">
       <Nav />
       <Background />
+      {/* <Login />
+      <Signup /> */}
+      <Footer />
     </div>
   );
 }

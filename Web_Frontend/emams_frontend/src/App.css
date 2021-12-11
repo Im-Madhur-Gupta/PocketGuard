@@ -1,3 +1,4 @@
 div.Main {
-    /* background: #110620; */
+    background: #110620;
+    overflow-x: hidden;
 }
