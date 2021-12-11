@@ -1,9 +1,7 @@
-SignUP:
-{
-    "firstname": "Mugdha",
-    "lastname" : "Sharma",
-    "email" : "mugdha@gmail.com",
-    "password" : "demopass"
+SignUP:    
+{  
+    "firstname": "Demo",  
+    "lastname" : "User",  
+    "email" : "demo@gmail.com",  
+    "password" : "demopass"  
 }
-
-Login:
