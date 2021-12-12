@@ -51,12 +51,21 @@ class User(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.email
 
+DEFAULT_ID = 1
+class expenses_Model(models.Model):
+    account = models.ForeignKey(
+        User, on_delete=models.CASCADE, default=DEFAULT_ID
+    )
+    Monthly_limit = models.IntegerField(blank=False, null=True),
+    Fruits_vegetables = models.IntegerField(blank=True, null=True),
+    Fuel = models.IntegerField(blank=True, null=True),
+    Clothes = models.IntegerField(blank=True, null=True),
+    Transporation = models.IntegerField(blank=True, null=True),
+    Entertainment = models.IntegerField(blank=True, null=True),
+    Dining = models.IntegerField(blank=True, null=True),
+    Liesure = models.IntegerField(blank=True, null=True),
+    Grocery = models.IntegerField(blank=True, null=True),
+    Electronics = models.IntegerField(blank=True, null=True),
+    Furniture = models.IntegerField(blank=True, null=True),
 
-class KYC(models.Model):
-    phone_num = models.IntegerField(null=False, blank=False, unique=True)
-    pan_num = models.IntegerField(null=False, blank=False, unique=True)
-    adhaar_num = models.IntegerField(null=False, blank=False, unique=True)
-    
-    def __str__(self):
-        return self.phone_num
     
