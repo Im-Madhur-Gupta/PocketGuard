@@ -2,8 +2,8 @@
 
 .navbar{
     display: flex;
-    justify-content: flex-end;
-    margin: 2px 5%;
+    justify-content: center;
+    margin: 0px 5% 2px 5%;
 }
 
 .navlinks {
@@ -20,6 +20,8 @@
   backdrop-filter: blur(20px);
   border-radius: 0px 0px 15px 15px;
   z-index: 2;
+  margin-top: 0;
+  padding: 20px;
 }
 
 /* .avatarcontainer {

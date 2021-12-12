@@ -1,3 +1,80 @@
-.signup {
-    color: #fff;
+.signup-container {
+  background: linear-gradient(180deg, #2b0c51 0%, rgba(71, 6, 152, 0.66) 100%);
+  width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 85vh;
+}
+
+.signup-wrapper {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-input-wrapper {
+  padding-top: 50px;
+}
+.signin-input-wrapper input {
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #a0a0a0;
+  width: 300px;
+}
+
+.signup-img {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  left: 127px;
+}
+
+.signup-img img {
+  height: 400px;
+}
+
+.signin-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+}
+
+.signin-btn {
+  width: 300px;
+  margin-top: 60px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 6, 152, 0.66) 15.04%,
+    rgba(38, 3, 80, 0.66) 70.44%
+  );
+  padding: 15px 0;
+  border-radius: 9px;
+}
+
+.floatingpara {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #ffffff;
+  width: 300px;
 }
