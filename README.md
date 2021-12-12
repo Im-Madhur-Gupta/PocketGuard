@@ -7,4 +7,4 @@ People  often  tend  to  spend more  than  they  decide. Its  hard  for
 React, Android (Java), Django and DRF.
 <br/><br/>
 
-### Note - We made this project for HackIIITV 2021 hackathon.
+### We made this project for HackIIITV 2021 Hackathon. :woman_technologist::man_technologist::innocent:
