@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 function Nav() {
@@ -6,11 +7,12 @@ function Nav() {
         <nav className="navbar">
             <div className="avatar"></div>
             <ul className="navLinks">
-                <button className="nav-item discover">Discover</button>
-                <button className="nav-item about">About</button>
-                <button className="nav-item tracker">Tracker</button>
-                <button className="nav-item help">Help</button>
-                <button className="cta track">Login / Sign Up</button>
+                <NavLink to='/' className="nav-item discover">Discover</NavLink>
+                <NavLink to='/about' className="nav-item about">About</NavLink>
+                <NavLink to='/tracker' className="nav-item tracker">Tracker</NavLink>
+                <NavLink to='/help' className="nav-item help">Help</NavLink>
+                <NavLink to='/login' className="cta track">Login</NavLink>
+                <NavLink to='/signup' className="cta track">Sign Up</NavLink>
             </ul>
         </nav>
     );
