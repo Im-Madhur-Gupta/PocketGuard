@@ -6,7 +6,7 @@
 
 .container {
     width: 100vw;
-    height: 483px;
+    padding-top: 30px;
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -16,6 +16,7 @@
 .copyright {
     text-align: center;
     color: #fff;
+    padding-bottom: 20px;
 }
 
 .p-links, .s-links {
