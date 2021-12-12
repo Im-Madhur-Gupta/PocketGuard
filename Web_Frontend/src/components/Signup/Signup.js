@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 
-class Signup extends React.Component {
-  handleSubmit = (event) => {
+const Signup = ({setIsSignedUp, isSignedUp}) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const req = {
       firstname: event.target.firstname.value,
@@ -19,16 +19,17 @@ class Signup extends React.Component {
       },
       body: JSON.stringify(req),
     }).then((res) => {
-      this.props.setIsSignedUp(true);
+      setIsSignedUp(true);
       window.location.href="/login";
+    }).catch(error => {
+      throw(error);
     });
     console.log("SignedUp");
   };
-  render() {
     return (
       <div className="signin-container">
         <div className="signin-wrapper">
-          <form className="signin" onSubmit={this.handleSubmit}>
+          <form className="signin" onSubmit={handleSubmit}>
             <span className="signin-title">Sign Up</span>
             <div className="signin-input-wrapper">
               <input
@@ -53,8 +54,8 @@ class Signup extends React.Component {
                 name="email"
                 placeholder="Email"
               ></input>
-            </div>
-            <div className="signin-input-wrapper">
+                </div>
+        <div className="signin-input-wrapper">
               <input
                 className="signin-input"
                 type="password"
@@ -74,7 +75,6 @@ class Signup extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Signup;
