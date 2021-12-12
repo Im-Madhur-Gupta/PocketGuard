@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/transaction_page"
+        android:enabled="true"
+        android:icon="@drawable/transaction_icon"
+        android:title="Transaction"
+      />
+
+    <item
+        android:id="@+id/plus_icon"
+        android:enabled="true"
+        android:icon="@drawable/plus_icon"
+        android:title=""/>
+
+    <item
+        android:id="@+id/budget_page"
+        android:enabled="true"
+        android:icon="@drawable/pie_chart"
+        android:title="Budget"/>
+
+    <item
+        android:id="@+id/profile_page"
+        android:enabled="true"
+        android:icon="@drawable/user_icon"
+        android:title="Profile"/>
+
+
+</menu>

@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/TRY/EMaMS/App/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/TRY/EMaMS/App/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/TRY/EMaMS/App/app/src/main/res/layout/bottom_navigation_menu.xml" value="0.1" />
+        <entry key="..\:/TRY/EMaMS/App/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
