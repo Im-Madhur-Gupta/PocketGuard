@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User
+from .models import User, KYC
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -15,7 +15,8 @@ class LoginSerializer(serializers.Serializer):
     class Meta:
         fields = "__all__"
 
-class extendeduser(serializers.Serializer):
+class KYCSerializer(serializers.ModelSerializer):
     class Meta:
+        model = KYC
         fields = "__all__"
     
