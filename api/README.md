@@ -46,3 +46,23 @@
 3. Logout: http://127.0.0.1:8000/logout/
 
 4. SignUps-List: http://127.0.0.1:8000/signup-list/
+
+5. Add Expenses and Monthly limit  http://127.0.0.1:8000/expenses/1/  
+
+```
+{
+    "Monthly_limit": 555,
+    "Fruits_vegetables" : 555, 
+    "Fuel" : 555,
+    "Clothes" : 555, 
+    "Transporation" : 555,
+    "Entertainment" : 555, 
+    "Dining" : 555,
+    "Liesure": 555,
+    "Grocery" :555,
+    "Electronics" : 555,
+    "Furniture" : 555
+}
+
+```
+PS: at 1, we'll use id number of that particular logged in user
