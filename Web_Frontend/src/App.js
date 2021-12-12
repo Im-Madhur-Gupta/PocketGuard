@@ -14,22 +14,32 @@ function App() {
   return (
     <div className="app">
       <Nav />
-      <BrowserRouter>
-        {/* {!isLoggedIn && <Navigate to="/login" />} */}
-        <Routes>
-          <Route exact path="/" element={<Background />} />
-          <Route
-            exact
-            path="/login"
-            element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />}
-          />
-          <Route
-            exact
-            path="/signup"
-            element={<Signup isSignedUp={isSignedUp} setIsSignedUp={setIsSignedUp} />}
-          />
-        </Routes>
-      </BrowserRouter>
+      {/* {!isLoggedIn && <Navigate to="/login" />} */}
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <div>
+              <Background /> <DataView />
+            </div>
+          }
+        />
+        <Route
+          exact
+          path="/login"
+          element={
+            <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+          }
+        />
+        <Route
+          exact
+          path="/signup"
+          element={
+            <Signup isSignedUp={isSignedUp} setIsSignedUp={setIsSignedUp} />
+          }
+        />
+      </Routes>
       <Footer />
     </div>
   );
