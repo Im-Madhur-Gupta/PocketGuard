@@ -1,0 +1,56 @@
+.dataview {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(180.06deg, rgba(59, 2, 170, 0.65) -35.01%, #3D0A7E 150.56%);
+    padding-top: 80px;
+    font-family: Poppins, sans-serif;
+}
+
+.mth {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background-color: transparent;
+    margin: 100px 45%;
+    border: 1px solid #FF9E00;
+    box-sizing: border-box;
+    border-radius: 18px;
+    color: #FF9E00;
+}
+
+.mth:hover {
+    background-color: #FF9E00;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bal {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;    
+}
+
+.amt {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.limit {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+}
+
+.amount {
+    color: #FF9E00;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    margin-top: -50px;
+    border: 1px solid #FF9E00;
+    border-radius: 10%;
+}
