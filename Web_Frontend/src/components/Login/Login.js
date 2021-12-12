@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const saveData = (event) => {
   sessionStorage.setItem("email", event.target.email.value);
 };
 
-class Login extends React.Component {
-  handleSubmit = (event) => {
+const Login = (props) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     saveData(event);
@@ -15,7 +17,7 @@ class Login extends React.Component {
       email: event.target.email.value,
       password: event.target.password.value,
     };
-    fetch("http://localhost:8000/login", {
+    fetch("http://localhost:8000/login/", {
       mode: "no-cors",
       method: "post",
       headers: {
@@ -23,16 +25,20 @@ class Login extends React.Component {
       },
       body: JSON.stringify(req),
     }).then((res) => {
-      this.props.setIsLoggedIn(true);
-      window.location.href="/";
+      console.log(res);
+        props.setIsLoggedIn(true);
+        // window.location.href="/";
+        navigate("/");
+        
+    }).catch((err) => {
+      throw err;
     });
     console.log("Logged In");
   };
-  render() {
     return (
       <div className="signin-container">
         <div className="signin-wrapper">
-          <form className="signin" onSubmit={this.handleSubmit}>
+          <form className="signin" onSubmit={handleSubmit}>
             <span className="signin-title">Sign In</span>
             <div className="signin-input-wrapper">
               <input
@@ -62,7 +68,6 @@ class Login extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Login;
