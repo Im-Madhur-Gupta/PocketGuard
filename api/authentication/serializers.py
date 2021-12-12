@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, KYC
+from .models import User, expenses_Model
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -15,8 +15,7 @@ class LoginSerializer(serializers.Serializer):
     class Meta:
         fields = "__all__"
 
-class KYCSerializer(serializers.ModelSerializer):
+class ExpensesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = KYC
+        model = expenses_Model
         fields = "__all__"
-    

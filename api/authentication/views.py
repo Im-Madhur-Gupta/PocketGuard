@@ -7,8 +7,9 @@ from rest_framework import status
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth import authenticate, login, logout
-from .models import User  
-from .serializers import UserSerializer, LoginSerializer,KYCSerializer
+from .models import User, expenses_Model
+from .serializers import UserSerializer, LoginSerializer, ExpensesSerializer
+from django.shortcuts import get_object_or_404
 
 
 class SignUpApi(APIView):
@@ -74,4 +75,20 @@ class SignUpListAPI(APIView):
         serializer = UserSerializer(signups, many = True)
         return Response(serializer.data)
 
+class UserDetailAPI(APIView):
+    permission_classes = [AllowAny]
+    def get(self,request, pk):
+        userID = User.objects.get(id=pk)
+        serializer = UserSerializer(userID, many = False)
+        return Response(serializer.data)
 
+
+class ExpensesAPI(APIView):
+    permission_classes = [AllowAny]
+    def post(self, request, pk):
+        serializer = ExpensesSerializer( data=request.data)
+        
+        if serializer.is_valid():
+            serializer.save()
+            
+        return Response(serializer.data)
