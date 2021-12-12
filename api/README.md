@@ -42,4 +42,14 @@
     "password" : "demopass"  
  }  
 ```
-3. Logout: http://127.0.0.1:8000/logout/
+3. KYC: http://127.0.0.1:8000/kyc/
+
+```
+{
+    "phone_num": 74434,
+    "pan_num" : 7623,
+    "adhaar_num" : 85422
+}
+```
+4. Logout: http://127.0.0.1:8000/logout/
+
