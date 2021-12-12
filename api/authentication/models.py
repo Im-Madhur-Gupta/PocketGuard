@@ -52,7 +52,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.email
 
 
-class extendeduser(models.Model):
+class KYC(models.Model):
     phone_num = models.IntegerField(null=False, blank=False, unique=True)
-    age = models.IntegerField(blank=True, null=True)
+    pan_num = models.IntegerField(null=False, blank=False, unique=True)
+    adhaar_num = models.IntegerField(null=False, blank=False, unique=True)
+    
+    def __str__(self):
+        return self.phone_num
     

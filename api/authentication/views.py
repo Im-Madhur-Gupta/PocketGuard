@@ -1,12 +1,13 @@
 from rest_framework.serializers import Serializer
+from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth import authenticate, login, logout
-from .models import User,  extendeduser
-from .serializers import UserSerializer, LoginSerializer
+from .models import User,KYC  
+from .serializers import UserSerializer, LoginSerializer,KYCSerializer
 
 
 class SignUpApi(APIView):
@@ -19,11 +20,6 @@ class SignUpApi(APIView):
             return Response(serializer.errors)
         
         user = User.objects.create_user(**serializer.validated_data)
-        phne_num = request.POST.get('phone_num')
-        age = request.POST.get('age')
-        newextendeduser = extendeduser(phone_num = phne_num, age = age)
-        
-
         return Response({"status": "User created successfully"}, status=status.HTTP_201_CREATED)
 
 
@@ -70,3 +66,10 @@ class LogoutApi(APIView):
 
         return Response({"status": "User logged out successfully"}, status=status.HTTP_200_OK)
 
+
+
+class KYCApi(generics.CreateAPIView):
+    permission_classes = [AllowAny]
+    
+    queryset = KYC.objects.all()
+    serializer_class = KYCSerializer
