@@ -6,6 +6,7 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import Footer from "./components/Footer/Footer";
 import DataView from "./components/Dataview/Dataview";
+import RecentTransactions from "./components/RecentTransactions/RecentTransactions";
 import "./App.css";
 
 function App() {
@@ -14,14 +15,13 @@ function App() {
   return (
     <div className="app">
       <Nav />
-      {/* {!isLoggedIn && <Navigate to="/login" />} */}
       <Routes>
         <Route
           exact
           path="/"
           element={
             <div>
-              <Background /> <DataView />
+              <Background /> <DataView /> <RecentTransactions />
             </div>
           }
         />

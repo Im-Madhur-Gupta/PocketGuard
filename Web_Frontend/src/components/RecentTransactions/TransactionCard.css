@@ -1,0 +1,61 @@
+.TransactionCard__maincont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #fcfcfc;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+
+.TransactionCard__innercont1 {
+  display: flex;
+}
+.TransactionCard__innercont1 img {
+  width: 100px;
+  padding-right: 20px;
+}
+.TransactionCard__innercont2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TransactionCard_desccont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TransactionCard_category {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #292b2d;
+}
+.TransactionCard_desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #c6c5c5;
+}
+
+.TransactionCard_amount {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fd3c4a;
+}
+
+.TransactionCard_time {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #91919f;
+}
